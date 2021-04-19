@@ -23,7 +23,7 @@ jobs:
         shell: bash
 
   run-javascript-actions:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Simple JS Action
         id; greet
