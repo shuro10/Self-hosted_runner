@@ -1,9 +1,10 @@
 name: Shell Commands2
 
 #on: [push, pull_request] #PR追記
-on: push:
-    pull_request:
-      type:[closed,assigned,opend,reopend]
+on:
+  push:
+  pull_request:
+    type:[closed,assigned,opend,reopend] #さらにtypeを指定できる
 
 jobs:
   run-shell-command:
