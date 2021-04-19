@@ -4,7 +4,7 @@ name: Shell Commands2
 on:
   push:
   pull_request:
-    types: [closed,assigned,opend,reopend] #さらにtypeを指定できる
+    types: [closed,assigned,opend,reopend] #さらにtypeを指定できる ##
 
 jobs:
   run-shell-command:
