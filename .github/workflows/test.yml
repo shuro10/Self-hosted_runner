@@ -1,6 +1,6 @@
 name: Shell Commands2
 
-on: [push, pull_request]
+on: [push, pull_request] #PR追記
 
 jobs:
   run-shell-command:
