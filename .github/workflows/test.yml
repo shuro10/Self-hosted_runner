@@ -14,8 +14,9 @@ jobs:
         run: echo "Hello World!!!!!!!"
       - name: multi script
         run: |
-          node -v
-          npm -v
+#          node -v
+#          npm -v
+           dir
   run-windows-command:
     runs-on: windows-latest
     needs: ["run-shell-command"] #jobsをparallelではなくseriesで実行するために,arrayで依存関係書く
