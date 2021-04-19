@@ -14,9 +14,21 @@ jobs:
           npm -v
   run-windows-command:
     runs-on: windows-latest
+    needs: ["run-shell-command"] #jobsをparallelではなくseriesで実行するために,arrayで依存関係書く
     steps:
       - name: Directory PowerShell
         run: Get-location
       - name: Directory Bash
         run: pwd
         shell: bash
+
+  run-javascript-actions:
+    runs-on: windows-latest
+    steps:
+      - name: Simple JS Action
+        id; greet
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-gree: James
+      - name: Log Greeting Time
+        run: echo "${{steps.greet.outputs.time}}"
