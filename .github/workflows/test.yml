@@ -14,8 +14,6 @@ jobs:
         run: echo "Hello World!!!!!!!"
       - name: multi script
         run: |
-#          node -v
-#          npm -v
            dir
   run-windows-command:
     runs-on: windows-latest
